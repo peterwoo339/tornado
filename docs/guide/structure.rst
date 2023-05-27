@@ -96,7 +96,7 @@ are mapped to ``StoryHandler``.  That number is passed (as a string) to
 
     app = Application([
         url(r"/", MainHandler),
-        url(r"/story/([0-9]+)", StoryHandler, dict(db=db), name="story")
+        url(r"/story/([0-9]+)", StoryHandler, dict(db=db), "story")
         ])
 
 The `.Application` constructor takes many keyword arguments that
